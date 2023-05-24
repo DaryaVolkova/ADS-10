@@ -8,8 +8,8 @@
 class Tree {
  private:
     struct Node {
-        char value; // цифра в узле
-        std::vector<Node*> childs; // вектор указателей на потомков (сл. цифры в перестановке)
+        char value;
+        std::vector<Node*> childs;
     };
     Node* root;
 
@@ -36,8 +36,8 @@ class Tree {
                 v = in;
                 per_size = in.size();
                 n_fact = fact(per_size);
-				        root = new Node;
-				        root->value = '*';
+                root = new Node;
+                root->value = '*';
                 for (int i = 0; i < in.size(); i++) {
                     root->childs.push_back(new Node);
                     root->childs[i]->value = in[i];
