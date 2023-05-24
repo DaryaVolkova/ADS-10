@@ -28,7 +28,7 @@ class Tree {
         return k;
     }
 
-    Tree(std::vector<char> in): root(nullptr), n_fact(0), per_size(0) {
+    explicit Tree(std::vector<char> in): root(nullptr), n_fact(0), per_size(0) {
         if (root) {
             throw std::string("Error!");
         } else {
